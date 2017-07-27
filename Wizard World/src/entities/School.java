@@ -11,87 +11,87 @@ public class School
 	private ArrayList<String> _houseNames;
 	private ArrayList<String> _courseNames;
 	private Vector<String> _studentNames;
-	private Vector<String> _perofessorNames;
+	private Vector<String> _professorNames;
 	public School(String name)
 	{
-		set_name(name);
-		set_houseNames(new ArrayList<String>());
-		set_courseNames(new ArrayList<String>());
-		set_studentNames(new Vector<String>());
-		set_perofessorNames(new Vector<String>());
-		set_numOFstudent(0);
-		set_housed(false);
+		_name=name;
+		_houseNames=new ArrayList<String>();
+		_courseNames=new ArrayList<String>();
+		_professorNames=new Vector<String>();
+		_studentNames=new Vector<String>();
+		_housed=false;
+		_numOFstudent=0;
 	}
-	public School(String name,ArrayList<String> houses,ArrayList<String> courses,Vector<String> students,Vector<String> perofessors)
+	public School(String name,ArrayList<String> houses,ArrayList<String> courses,Vector<String> students,Vector<String> professors)
 	{
-		set_name(name);
-		set_houseNames(houses);
-		set_courseNames(courses);
-		set_studentNames(students);
-		set_perofessorNames(perofessors);
-		if(get_studentNames()!= null)
-			set_numOFstudent(get_studentNames().size());
+		_name=name;
+		_houseNames=houses;
+		_courseNames=courses;
+		_studentNames=students;
+		_professorNames=professors;
+		if(_studentNames!= null)
+			_numOFstudent=(_studentNames.size());
 		else
-			set_numOFstudent(0);
+			_numOFstudent=0;
 		if(houses==null||houses.isEmpty())
-			set_housed(false);
+			_housed=false;
 		else
-			set_housed(true);
+			_housed=true;
 	}
 	public Vector<String> get_perofessorNames() 
 	{
-		return _perofessorNames;
+		return _professorNames;
 	}
-	public void set_perofessorNames(Vector<String> _perofessorNames) 
+	public void set_professorNames(Vector<String> perofessorNames) 
 	{
-		this._perofessorNames = _perofessorNames;
+		_professorNames = perofessorNames;
 	}
 	public String get_name() 
 	{
 		return _name;
 	}
-	public void set_name(String _name) 
+	public void set_name(String name) 
 	{
-		this._name = _name;
+		_name = name;
 	}
 	public int get_numOFstudent() 
 	{
 		return _numOFstudent;
 	}
-	public void set_numOFstudent(int _numOFstudent) 
+	public void set_numOFstudent(int numOFstudent) 
 	{
-		this._numOFstudent = _numOFstudent;
+		_numOFstudent = numOFstudent;
 	}
 	public boolean is_housed() 
 	{
 		return _housed;
 	}
-	public void set_housed(boolean _housed) 
+	public void set_housed(boolean housed) 
 	{
-		this._housed = _housed;
+		_housed = housed;
 	}
 	public ArrayList<String> get_houseNames() 
 	{
 		return _houseNames;
 	}
-	public void set_houseNames(ArrayList<String> _houseNames) 
+	public void set_houseNames(ArrayList<String> houseNames) 
 	{
-		this._houseNames = _houseNames;
+		_houseNames = houseNames;
 	}
 	public ArrayList<String> get_courseNames() 
 	{
 		return _courseNames;
 	}
-	public void set_courseNames(ArrayList<String> _courseNames) 
+	public void set_courseNames(ArrayList<String> courseNames) 
 	{
-		this._courseNames = _courseNames;
+		_courseNames = courseNames;
 	}
 	public Vector<String> get_studentNames() 
 	{
 		return _studentNames;
 	}
-	public void set_studentNames(Vector<String> _studentNames) 
+	public void set_studentNames(Vector<String> studentNames) 
 	{
-		this._studentNames = _studentNames;
+		_studentNames = studentNames;
 	}
 }

@@ -142,7 +142,7 @@ public class SchoolTest {
 		professors.add("Albus Dumbledore");
 		professors.add("Minerva McGonnagol");
 		hogwarts = new School("Hogwarts");
-		hogwarts.set_perofessorNames(professors);
+		hogwarts.set_professorNames(professors);
 		
 		Vector<String> actual = hogwarts.get_perofessorNames();
 		Vector<String> expected = professors;

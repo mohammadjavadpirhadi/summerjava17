@@ -55,7 +55,7 @@ public class CourseTest {
 	@Test
 	public void setProfessorTest() {
 		flying = new Course("Flying");
-		flying.setProffesorName("Madame Hooch");
+		flying.setProfessorName("Madame Hooch");
 		String expected = "Madame Hooch";
 		String actual = flying.getProfessorName();
 		
