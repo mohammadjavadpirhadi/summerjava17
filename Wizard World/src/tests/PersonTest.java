@@ -54,7 +54,7 @@ public class PersonTest {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
-	public void setNameTest()
+	public void setNameTest()  
 	{
 		snape = new Person("");
 		snape.setName("Severus Snape");
@@ -64,7 +64,7 @@ public class PersonTest {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
-	public void setHouseTest()
+	public void setHouseTest() 
 	{
 		snape = new Person("Severus Snape");
 		snape.setHouseName("Slytherin");
@@ -74,7 +74,7 @@ public class PersonTest {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
-	public void setBloodStatusTest()
+	public void setBloodStatusTest() 
 	{
 		snape = new Person("Severus Snape");
 		snape.setBloodStatus("Half-Blood");
@@ -84,7 +84,7 @@ public class PersonTest {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
-	public void setSchoolTest()
+	public void setSchoolTest() 
 	{
 		snape = new Person("Severus Snape");
 		snape.setSchool("Hogwarts");
