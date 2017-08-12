@@ -2,16 +2,17 @@ package entities;
 
 public class Person 
 {
-	public String _name;
-	public House _houseName;
-	public BloodStatus _bloodStatus;
-	public School _school;
-	public String _birthday;
+	private String _name;	//Person’s name
+	private House _houseName;	//If a person does not belong in a house, the value is “N/A”
+	private BloodStatus _bloodStatus;	//Blood status of the person
+	private School _school;	//the school this person is/did attend or teach
+	private String _birthday;	//A string that is to be checked that represents a date
+	/* CONSTRUCTORS */
 	public Person(String name)
 	{
 		_name=name;
 		_houseName=null;
-		_bloodStatus=null;
+		_bloodStatus=BloodStatus.Pure_Blood;
 		_school=null;
 	}
 	public Person(String name,House house,BloodStatus blood,School school,String birthday)
@@ -22,6 +23,7 @@ public class Person
 		_school=school;
 		_birthday=birthday;
 	}
+	/* GETTERS & SETTERS */
 	public String getName ()
 	{
 		return _name;

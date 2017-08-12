@@ -2,8 +2,9 @@ package entities;
 
 public class FinishedCourse extends Course
 {
-	private Grades _grade;
-	private Boolean _passed;
+	private Grades _grade;	//Grade received
+	private Boolean _passed;	//Whether or not the student passed the course
+	/* CONSTRUCTORS */
 	public FinishedCourse(String name) 
 	{
 		super(name);
@@ -23,6 +24,7 @@ public class FinishedCourse extends Course
 			_passed=false;
 		}
 	}
+	/* GETTERS & SETTERS */
 	public Grades getGrade()
 	{
 		return _grade;

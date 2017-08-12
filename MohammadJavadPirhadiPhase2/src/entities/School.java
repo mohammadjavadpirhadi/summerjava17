@@ -5,14 +5,15 @@ import java.util.Vector;
 
 public class School 
 {
-	private String _name;
-	private int _numOFstudent;
-	private boolean _housed;
-	private ArrayList<House> _houseNames;
-	private ArrayList<Course> _courseNames;
-	private Vector<Students> _studentNames;
-	private Vector<Professor> _professorNames;
-	private String _location;
+	private String _name;	//The school’s name
+	private int _numOFstudent;	//Number of students attending the school
+	private boolean _housed;	//A house may or may not have houses
+	private ArrayList<House> _houseNames;	//If a school doesn’t have any houses, this vector will be null
+	private ArrayList<Course> _courseNames;	// This vector contains the information of courses offered
+	private Vector<Students> _studentNames;	//This vector contains the information of students attending
+	private Vector<Professor> _professorNames;	// This vector contains the information of courses offered
+	private String _location;	//This string specifies which country the school is located at
+	/* CONSTRUCTORS */
 	public School(String name)
 	{
 		_name=name;
@@ -41,6 +42,7 @@ public class School
 		else
 			_housed=true;
 	}
+	/* GETTERS & SETTERS */
 	public Vector<Professor> getPerofessorNames() 
 	{
 		return _professorNames;

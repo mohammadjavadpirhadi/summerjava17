@@ -4,15 +4,16 @@ import java.util.Vector;
 
 public class Course 
 {
-	public String _name;
-	public Grades _minGrade;
-	public Professor _professorName;
-	public int _year;
-	public Vector<Students> _studentNames;
+	private String _name;	//The name of a course
+	private Grades _minGrade;	//minimum grade required in the OWLs to continue the course
+	private Professor _professorName;	//Professor teaching the course at the school the course is offered at which contains this course
+	private int _year;	//The year this course is offered
+	private Vector<Students> _studentNames;	//List of the students in the course at the given year
+	/* CONSTRUCTORS */
 	public Course(String name)
 	{
 		_name=name;
-		_minGrade=null;
+		_minGrade=Grades.A;
 		_professorName=null;
 		_year=0;
 		_studentNames=new Vector<Students>();
@@ -24,6 +25,7 @@ public class Course
 		_professorName=professor;
 		_year=year;
 	}
+	/* GETTERS & SETTERS */
 	public String getName()
 	{
 		return _name;

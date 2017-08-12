@@ -4,8 +4,9 @@ import java.util.Map;
 
 public class Professor extends Person
 {
-	private Map<Integer,Course> _courses;
-	private String _notes;
+	private Map<Integer,Course> _courses;	//The list of courses and the year he/she taught them
+	private String _notes;	//If he/she has any special abilities or something noteworthy it is mentioned here
+	/* CONSTRUCTORS */
 	public Professor(String name) 
 	{
 		super(name);
@@ -16,6 +17,7 @@ public class Professor extends Person
 	{
 		super(name, house, blood, school, birthday);
 	}
+	/* GETTERS & SETTERS */
 	public Map<Integer,Course> getCourses()
 	{
 		return _courses;

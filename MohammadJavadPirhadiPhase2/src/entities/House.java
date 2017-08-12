@@ -6,15 +6,16 @@ import java.util.Vector;
 
 public class House 
 {
-	private String _name;
-	private School _school;
-	private Vector<Students> _students;
-	private Professor _headTeacher;
-	private ArrayList<String> _qualities;
-	private Map<Integer,Students> _prefects;
-	public House()
+	private String _name;	//House name
+	private School _school;	//the school that has this house
+	private Vector<Students> _students;	//List of students in the house
+	private Professor _headTeacher;	//the house’s head teacher
+	private ArrayList<String> _qualities;	//List of qualities that are required to be in the house
+	private Map<Integer,Students> _prefects;	//the list of prefects of the house per year
+	/* CONSTRUCTORS */
+	public House(String name) 
 	{
-		_name="";
+		_name=name;
 		_school=null;
 		_students=new Vector<Students>();
 		_headTeacher =null;
@@ -30,6 +31,7 @@ public class House
 		_qualities=qualities;
 		_prefects=prefects;
 	}
+	/* GETTERS & SETTERS */
 	public String getName()
 	{
 		return _name;
