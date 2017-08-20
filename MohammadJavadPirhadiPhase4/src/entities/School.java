@@ -14,9 +14,9 @@ public class School
 	private Vector<Professor> _professorNames;	// This vector contains the information of courses offered
 	private String _location;	//This string specifies which country the school is located at
 	/* CONSTRUCTORS */
-	public School(String name)
+	public School()
 	{
-		_name=name;
+		_name="";
 		_houseNames=new ArrayList<House>();
 		_courseNames=new ArrayList<Course>();
 		_professorNames=new Vector<Professor>();

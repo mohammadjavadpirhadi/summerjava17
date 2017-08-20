@@ -8,9 +8,9 @@ public class Person
 	private School _school;	//the school this person is/did attend or teach
 	private String _birthday;	//A string that is to be checked that represents a date
 	/* CONSTRUCTORS */
-	public Person(String name)
+	public Person()
 	{
-		_name=name;
+		_name="";
 		_houseName=null;
 		_bloodStatus=BloodStatus.Pure_Blood;
 		_school=null;

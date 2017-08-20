@@ -10,9 +10,9 @@ public class Course
 	private int _year;	//The year this course is offered
 	private Vector<Students> _studentNames;	//List of the students in the course at the given year
 	/* CONSTRUCTORS */
-	public Course(String name)
+	public Course()
 	{
-		_name=name;
+		_name="";
 		_minGrade=Grades.A;
 		_professorName=null;
 		_year=0;

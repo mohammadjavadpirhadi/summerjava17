@@ -13,9 +13,9 @@ public class House
 	private ArrayList<String> _qualities;	//List of qualities that are required to be in the house
 	private Map<Integer,Students> _prefects;	//the list of prefects of the house per year
 	/* CONSTRUCTORS */
-	public House(String name) 
+	public House() 
 	{
-		_name=name;
+		_name="";
 		_school=null;
 		_students=new Vector<Students>();
 		_headTeacher =null;

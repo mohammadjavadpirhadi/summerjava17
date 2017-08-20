@@ -7,9 +7,9 @@ public class Students extends Person
 	private Vector<Course> _courses;	//The courses the student has taken
 	private Vector<FinishedCourse> _reportCard;	//The student’s report card
 	/* CONSTRUCTORS */
-	public Students(String name) 
+	public Students() 
 	{
-		super(name);
+		super();
 		_courses=new Vector<Course>();
 		_reportCard=new Vector<FinishedCourse>();
 	}

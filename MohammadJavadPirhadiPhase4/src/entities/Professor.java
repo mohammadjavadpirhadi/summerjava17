@@ -7,9 +7,9 @@ public class Professor extends Person
 	private Map<Integer,Course> _courses;	//The list of courses and the year he/she taught them
 	private String _notes;	//If he/she has any special abilities or something noteworthy it is mentioned here
 	/* CONSTRUCTORS */
-	public Professor(String name) 
+	public Professor() 
 	{
-		super(name);
+		super();
 		_notes="";
 		_courses=null;
 	}

@@ -5,9 +5,9 @@ public class FinishedCourse extends Course
 	private Grades _grade;	//Grade received
 	private Boolean _passed;	//Whether or not the student passed the course
 	/* CONSTRUCTORS */
-	public FinishedCourse(String name) 
+	public FinishedCourse() 
 	{
-		super(name);
+		super();
 		_grade = Grades.O;
 		_passed=false;
 	}
