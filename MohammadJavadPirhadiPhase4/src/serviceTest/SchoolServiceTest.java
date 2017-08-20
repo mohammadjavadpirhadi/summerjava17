@@ -1,6 +1,6 @@
 package serviceTest;
 
-import entities.School;
+import entities.*;
 
 public class SchoolServiceTest 
 {

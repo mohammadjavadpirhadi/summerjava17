@@ -1,28 +1,23 @@
 package service;
 
+import java.util.Vector;
+
 import entities.*;
 
 public class CourseService 
 {
 	private Course _course;	//The course the services are performed on/at
-	/*
-	 * public void getData()
-	{
-		CourseInput CI=new CourseInput();
-	}
-	public void setData()
-	{
-		CourseOutput CO=new CourseOutput();
-	}
-	*/
+	private Vector<Course> _allCourses; //All the Courses in the system
 	/* CONSTRUCTORS */
 	public CourseService()
 	{
 		_course=null;
+		_allCourses=new Vector<Course>();
 	}
-	public CourseService(Course course)
+	public CourseService(Course course,Vector<Course> allCourses)
 	{
 		_course=course;
+		_allCourses=allCourses;
 	}
 	/* GETTERS & SETTERS */
 	public Course getCourse()
@@ -33,5 +28,12 @@ public class CourseService
 	{
 		_course=course;
 	}
-	
+	public Vector<Course> getAllCourses()
+	{
+		return _allCourses;
+	}
+	public void setAllCourses (Vector<Course> allCourses)
+	{
+		_allCourses=allCourses;
+	}
 }
